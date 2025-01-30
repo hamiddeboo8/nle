@@ -317,6 +317,7 @@ class NLE(gym.Env):
             wizard=wizard,
             spawn_monsters=spawn_monsters,
             scoreprefix=scoreprefix,
+            copy=True,
         )
         self._close_nethack = weakref.finalize(self, self.nethack.close)
 
